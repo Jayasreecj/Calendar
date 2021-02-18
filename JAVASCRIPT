@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  
+  <style>
+    table {
+      width: 80%;
+    
+      border-collapse: collapse;
+    }
+    caption{
+    
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top : 1px solid #000;
+    font-family: cursive;
+    
+    
+    }
+
+    td,
+    th {
+      height: 100px;
+      border: 1px solid black;
+      padding: 1px 3px 3px 3px;
+      text-align: top;
+      font-family: cursive;
+     
+      
+    }
+
+    th {
+      height: 10px;
+      border :1px 1px 1px 1px ;
+      font-weight: bold;
+      font-family: cursive;
+      background-color: #E6E6E6;
+      text-align:start;
+
+    }
+ 
+  </style>
+</head>
+
+<body>
+  
+ 
+  <div id="calendar">
+    
+  </div>
+  
+  
+  <script>
+   const a=12;
+    function createCalendar(elem, year, month) 
+    {
+        
+      let mon = month - 1; 
+      let d = new Date(year, mon);
+    
+      
+      var arr=['JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'];
+
+      let table = '<table><caption>JANUARY 2021<a style="float:right" id="myLink2" href="#" onclick="createCalendar(calendar, 2021,1);">&#x25B6</a></caption><tr><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr><tr>';
+      
+       console.log('&#x25C0');
+  
+      for (let i = 0; i < getDay(d); i++) 
+        {
+        table += '<td></td>';
+        }
+
+    
+      while (d.getMonth() == mon) 
+        {
+         table += '<td>' + d.getDate() + '</td>';
+
+        if (getDay(d) % 7 == 6)
+          { 
+          table += '</tr><a style="float:left" id="myLink" href="#" onclick="prompt("hi")</a><tr>';
+          }
+
+        d.setDate(d.getDate() + 1);
+        }
+
+      
+        if (getDay(d) != 0) 
+          {
+        for (let i = getDay(d); i < 7; i++) 
+        {
+          table += '<td></td>';
+        }
+          }
+
+   
+          
+      table += '</tr></table>';
+      
+      elem.innerHTML = table;
+  
+    }
+    
+    function getDay(date)
+     {
+      let day = date.getDay();
+      if (day == 0) day = 7; 
+      
+      return day - 1;
+    
+    }
+  
+   
+    createCalendar(calendar, 2021,a);
+    
+  </script>
+  
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <style>
+            table {
+      width: 80%;
+    
+      border-collapse: collapse;
+    }
+    caption{
+    
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top : 1px solid #000;
+    font-family: cursive;
+    
+    
+    }
+
+    td,
+    th {
+      height: 80px;
+      border: 1px solid black;
+      text-align: top;
+      font-family: cursive;
+    
+    }
+
+    th {
+        border :1px 1px 1px 1px ;
+        height: 10px;
+        font-weight: bold;
+        font-family: cursive;
+        text-align:start;
+
+    }
+ 
+    </style>
+    </head>
+    <body>
+            <table>
+                <th>
+                <caption><a style='float:left',href='file:///C:/Users/MyPc/Desktop/GI/htmland%20css/ttr.html'rel='noflow'><</a>JANUARY 2021<a style='float:right',href='file:///C:/Users/MyPc/Desktop/GI/htmland%20css/ttr.html' rel='noflow'>></a></caption> 
+                    <th >S</th>
+                    <th>M</th>
+                    <th >T</th>
+                    <th >W</th>
+                    <th >T</th>
+                    <th >F</th>
+                    <th >S</th> 
+                </th>
+    <tr>
+        
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td >1</td>
+        <td >2</td>
+        <td >3</td>
+    </tr>
+    <tr  >
+        
+        <td >4</td>
+        <td >5</td>
+   
+        <td >6</td>
+        <td >7</td>
+        <td >8</td>
+        <td >9</td>
+        <td >10</td>
+    </tr>
+    <tr>
+       
+        <td >11</td>
+        <td >12</td>
+        <td >13</td>
+        <td >14</td>
+        <td >15</td>
+        <td >16</td>
+        <td >17</td>
+    </tr>
+    <tr >
+        
+        <td >18</td>
+        <td >19</td>
+        <td >20</td>
+        <td >21</td>
+        <td >22</td>
+        <td >23</td>
+        <td >24</td>
+    </tr>
+    <tr>
+       
+        <td >25</td>
+        <td >26</td>
+    
+        <td >27</td>
+        <td >28</td>
+        <td >29</td>
+        <td >30</td>
+        <td >31</td>
+    
+    </table>
+    </body>
+</html>
